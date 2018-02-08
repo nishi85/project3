@@ -1,3 +1,32 @@
+  
+
+const podcasts = {};
+
+podcasts.genres = {
+  horror: 0,
+  comedy: 0,
+  sports: 0,
+  nonFiction: 0,
+  fiction: 0
+};
+
+podcasts.podcast = [
+    {title: 'nishi',
+     genre: 'sports',
+     ongoing: 'yes',
+     length: 'medium'  
+    },
+
+    {title: 'rathod',
+     genre: 'horror',
+     ongoing: 'yes',
+     length: 'long'  
+    },
+
+]
+
+
+
 //user begins quiz by clicking on button
 
 //scroll down to begin quiz

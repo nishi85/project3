@@ -8,11 +8,131 @@
 </head>
 <body>
     <h1>Pocast Quiz!</h1>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor sequi rerum commodi a cupiditate aperiam temporibus officia officiis ut odio, eveniet sed atque provident praesentium repellendus, accusantium asperiores optio natus.</p>
+    <p>Welcome to the podcast recommendation quiz! Please answer the following questions and the quiz will give you a podcast recommendation!</p>
     <button>Take Quiz!</button>
 
+    <form class="quiz">
+        <h4>1. question 1 </h4>
+        <input name="test" type="radio" id="horror" value="horror">
+        <label for="horror">Horror</label>
+        <input name="test" type="radio" id="comedy" value="comedy">
+        <label for="comedy">Comedy</label>
+        <input name="test" type="radio" id="sports" value="sports"> 
+        <label for="sports">Sports</label>
+        <input name="test" type="radio" id="nonFiction" value="nonFiction"> 
+        <label for="nonFiction">Non Fiction</label>
+        <input name="test" type="radio" id="fiction" value="fiction"> 
+        <label for="fiction">Fiction</label>
+        <button class ="answerOne">Answer!</button>
+    </form>
+
+    <form class="quiz2">
+        <h4>2. question 2 </h4>
+        <input name="test2" type="radio" id="horror" value="horror">
+        <label for="horror">Horror</label>
+        <input name="test2" type="radio" id="comedy" value="comedy">
+        <label for="comedy">Comedy</label>
+        <input name="test2" type="radio" id="sports" value="sports">
+        <label for="sports">Sports</label>
+        <input name="test2" type="radio" id="nonFiction" value="nonFiction">
+        <label for="nonFiction">Non Fiction</label>
+        <input name="test2" type="radio" id="fiction" value="fiction">
+        <label for="fiction">Fiction</label>
+        <button class="answerTwo">Answer!</button>
+    </form>
 
 
-    <script></script>
+
+    <button>Calculate Score!</button>
+
+    <p class="exp">podcast a is recommended</p>
+    <p class="red">podcast b is recommended</p>
+
+
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+    <!-- <script src="script.js"></script> -->
+    <script>
+
+        const podcast = {};
+
+            podcast.genres = {
+                horror: 0,
+                comedy: 0,
+                sports: 0,
+                nonFiction: 0,
+                fiction: 0
+            };
+
+    
+    $(function () {
+        $('.exp').hide();
+        $('.red').hide();
+        $('.quiz2').hide();
+        
+      $('.answerOne').on('click', function(e) {
+            e.preventDefault();
+            let selection = $('input[name=test]:checked').val();
+            if (selection === 'horror') {
+                console.log('horror');
+                $('.quiz2').show();
+                $('.quiz').hide();
+              return podcast.genres.horror +=1;
+            } 
+            else if (selection === 'comedy') {
+             $('.quiz2').show();
+              $('.quiz').hide();   
+             console.log('comedy');   
+             return podcast.genres.comedy += 1; 
+            }
+            else if (selection === 'sports') {
+                console.log('sports');
+                $('.quiz2').show();
+                 $('.quiz').hide();
+                return podcast.genres.sports += 1;
+            }
+            else if (selection === 'fiction') {
+                $('.quiz2').show();
+                 $('.quiz').hide();
+                return podcast.genres.fiction += 1;
+            }
+            else {
+                console.log('not hello');
+                $('.quiz2').show();
+                 $('.quiz').hide();
+                return podcast.genres.nonFiction += 1;
+            }
+            
+        });
+
+            $('.answerTwo').on('click', function (e) {
+            e.preventDefault();
+            let selection = $('input[name=test2]:checked').val();
+            if (selection === 'horror') {
+                console.log('horror');
+                return podcast.genres.horror += 1;
+            }
+            else if (selection === 'comedy') {
+                console.log('comedy');
+                return podcast.genres.comedy += 1;
+            }
+            else if (selection === 'sports') {
+                console.log('sports');
+                return podcast.genres.sports += 1;
+            }
+            else if (selection === 'fiction') {
+                return podcast.genres.fiction += 1;
+            }
+            else {
+                console.log('not hello');
+                return podcast.genres.nonFiction += 1;
+            }
+        });
+
+        
+    
+    
+    });
+    
+    </script>
 </body>
 </html>
