@@ -1,0 +1,13 @@
+.podcastResult {
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+        ul {
+            width: 100%;
+            padding-left: 0;
+        }
+        ul li{
+            list-style: none;
+        }
+}

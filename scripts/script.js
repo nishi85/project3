@@ -10,6 +10,8 @@ podcasts.genres = {
   fiction: 0
 };
 
+podcasts.highestGenre = [];
+
 
 podcasts.comparison = function() {
    console.log("hello");
@@ -18,31 +20,43 @@ podcasts.comparison = function() {
    for (let key in podcasts.genres) {
     if (podcasts.genres[key] > highestValue){
       highest = key;
-      highestValue = podcasts.genres[key];
+      highestValue = podcasts.genres[key]; 
     }
-  }
-  return highest;
+  } 
+   console.log(highest);
+   podcasts.highestGenre.push(highest);
+  
 };
 
 podcasts.recommendation = function() {
   
-  
-  if (podcasts.comparison === "sports") {
+  if (podcasts.highestGenre[0] === "sports") {
     console.log(`your recommendation is ${podcasts.entry[0].title}`);
+    $("ul").append(`<li>your recommendation is ${podcasts.entry[0].title}</li>
+    <li>Genre: ${podcasts.entry[0].genre}</li>
+    <li>Ongoing: ${podcasts.entry[0].ongoing}</li>
+    <li>Duration: ${podcasts.entry[0].length}</li>
+    <li><img src =${podcasts.entry[0].img}>`);
   }
 
-  if (podcasts.comparison === "horror") {
+ else if (podcasts.highestGenre[0] === "horror") {
     console.log(`your recommendation is ${podcasts.entry[1].title}`);
+    $("ul").append(`<li>your recommendation is ${podcasts.entry[1].title}</li>`);
   }
 
-  if (podcasts.comparison === "comedy") {
+ else if (podcasts.highestGenre[0] === "comedy") {
     console.log(`your recommendation is ${podcasts.entry[2].title}`);
+    $("ul").append(`<li>your recommendation is ${podcasts.entry[2].title}</li>`);
   }
 
-  if (podcasts.comparison === "fiction") {
+ else if (podcasts.highestGenre[0] === "fiction") {
     console.log(`your recommendation is ${podcasts.entry[3].title}`);
-  } else {
+    $("ul").append(`<li>your recommendation is ${podcasts.entry[3].title}</li>`);
+  } 
+  
+  else {
     console.log(`your recommendation is ${podcasts.entry[4].title}`);
+    $("ul").append(`<li>your recommendation is ${podcasts.entry[4].title}</li>`);
   }
 
 };
@@ -57,45 +71,60 @@ podcasts.entry = [
     title: "jjjj",
     genre: "sports",
     ongoing: "yes",
-    length: "medium"
+    length: "medium",
+    img:'assets/bb.jpg'
   },
 
   {
     title: "yyyy",
     genre: "horror",
     ongoing: "yes",
-    length: "long"
+    length: "long",
+    img:''
   },
 
   {
     title: "zzzz",
     genre: "comedy",
     ongoing: "yes",
-    length: "short"
+    length: "short",
+    img:''
   },
 
   {
     title: "aaaa",
     genre: "fiction",
     ongoing: "yes",
-    length: "long"
+    length: "long",
+    img:''
   },
 
   {
     title: "bbbb",
     genre: "non-fiction",
     ongoing: "no",
-    length: "short"
+    length: "short",
+    img:''
   }
 ];
 
 
   $(function() {
-            
-    $(".quiz2").hide();
+            $(".quiz").hide();
+            $(".quiz2").hide();
             $(".quiz3").hide();
             $(".quiz4").hide();
             $(".quiz5").hide();
+            $(".calculate").hide();
+            $('#reset').hide();
+
+            $("#btnStart").on("click", function(e){
+            e.preventDefault();
+            console.log('hello');
+            $(".quiz").show();
+            $("#btnStart").hide();
+            
+            });
 
             $(".answerOne").on("click", function(e) {
               e.preventDefault();
@@ -224,26 +253,48 @@ podcasts.entry = [
               let selection = $("input[name=test5]:checked").val();
               if (selection === "horror") {
                 console.log("horror");
+                  $(".calculate").show();
+                  $(".quiz5").hide();
                 return (podcasts.genres.horror += 1);
+              
               } else if (selection === "comedy") {
                 console.log("comedy");
+                 $(".calculate").show();
+                 $(".quiz5").hide();
                 return (podcasts.genres.comedy += 1);
+               
               } else if (selection === "sports") {
                 console.log("sports");
+                 $(".calculate").show();
+                 $(".quiz5").hide();
                 return (podcasts.genres.sports += 1);
+               
               } else if (selection === "fiction") {
                 console.log("fiction");
+                $(".calculate").show();
+                $(".quiz5").hide();
                 return (podcasts.genres.fiction += 1);
+                
               } else {
                 console.log("non fiction");
+                $(".calculate").show();
+                $(".quiz5").hide();
                 return (podcasts.genres.nonFiction += 1);
+                
               }
             });
 
             $('.calculate').on('click', function(e){
             podcasts.comparison();
             podcasts.recommendation();
+            $('.calculate').hide();
+            $('#reset').show();
             });
+
+            $('#reset').on('click', function(e){
+              location.reload();
+            });
+         
           });
 
 

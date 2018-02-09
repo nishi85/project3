@@ -1,0 +1,16 @@
+.quizHeader {
+    display: flex;
+    justify-content: center;
+    
+    
+    h1 {
+        @include remCalc(36);
+        width: 100%;
+    }
+
+    p {
+        width: 100%;
+        @include remCalc(26);
+    }
+
+}

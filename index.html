@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel="stylesheet" href="styles/animate.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header class ="quizHeader">
+        <div class="wrapper">
+            <h1>Podcast Quiz!</h1>
+            <i class="fas fa-podcast fa-5x"></i>
+
+            <p>Welcome to the podcast recommendation quiz! Please answer the following questions and the quiz will give you a podcast recommendation!</p>
+            <button id="btnStart">Take Quiz!</button>
+        </div>
+    </header>
+
+    <main = class"quizMain">
+      <div class="wrapper">
+        <form class="quiz">
+            <h3>1. question 1 </h3>
+            <input name="test" type="radio" id="horror" value="horror">
+            <label for="horror">Horror</label>
+            <input name="test" type="radio" id="comedy" value="comedy">
+            <label for="comedy">Comedy</label>
+            <input name="test" type="radio" id="sports" value="sports"> 
+            <label for="sports">Sports</label>
+            <input name="test" type="radio" id="nonFiction" value="nonFiction"> 
+            <label for="nonFiction">Non Fiction</label>
+            <input name="test" type="radio" id="fiction" value="fiction"> 
+            <label for="fiction">Fiction</label>
+            <button class ="answerOne">Answer!</button>
+        </form>
+
+        <form class="quiz2">
+            <h3>2. question 2 </h3>
+            <input name="test2" type="radio" id="horror" value="horror">
+            <label for="horror">Horror</label>
+            <input name="test2" type="radio" id="comedy" value="comedy">
+            <label for="comedy">Comedy</label>
+            <input name="test2" type="radio" id="sports" value="sports">
+            <label for="sports">Sports</label>
+            <input name="test2" type="radio" id="nonFiction" value="nonFiction">
+            <label for="nonFiction">Non Fiction</label>
+            <input name="test2" type="radio" id="fiction" value="fiction">
+            <label for="fiction">Fiction</label>
+            <button class="answerTwo">Answer!</button>
+        </form>
+
+        <form class="quiz3">
+            <h3>3. question 3 </h3>
+            <input name="test3" type="radio" id="fiction" value="fiction">
+            <label for="fiction">Fiction</label>
+            <input name="test3" type="radio" id="nonFiction" value="nonFiction">
+            <label for="nonFiction">Non Fiction</label>
+            <input name="test3" type="radio" id="sports" value="sports">
+            <label for="sports">Sports</label>
+            <input name="test3" type="radio" id="horror" value="horror">
+            <label for="horror">Horror</label>
+            <input name="test3" type="radio" id="comedy" value="comedy">
+            <label for="comedy">Comedy</label>
+            <button class="answerThree">Answer!</button>
+        </form>
+
+        <form class="quiz4">
+            <h3>4. question 4 </h3>
+            <input name="test4" type="radio" id="horror" value="horror">
+            <label for="horror">Horror</label>
+            <input name="test4" type="radio" id="comedy" value="comedy">
+            <label for="comedy">Comedy</label>
+            <input name="test4" type="radio" id="sports" value="sports">
+            <label for="sports">Sports</label>
+            <input name="test4" type="radio" id="nonFiction" value="nonFiction">
+            <label for="nonFiction">Non Fiction</label>
+            <input name="test4" type="radio" id="fiction" value="fiction">
+            <label for="fiction">Fiction</label>
+            <button class="answerFour">Answer!</button>
+        </form>
+
+
+        <form class="quiz5">
+            <h3>5. question 5 </h3>
+            <input name="test5" type="radio" id="horror" value="horror">
+            <label for="horror">Horror</label>
+            <input name="test5" type="radio" id="comedy" value="comedy">
+            <label for="comedy">Comedy</label>
+            <input name="test5" type="radio" id="sports" value="sports">
+            <label for="sports">Sports</label>
+            <input name="test5" type="radio" id="nonFiction" value="nonFiction">
+            <label for="nonFiction">Non Fiction</label>
+            <input name="test5" type="radio" id="fiction" value="fiction">
+            <label for="fiction">Fiction</label>
+            <button class="answerFive">Answer!</button>
+        </form>
+
+
+        <button class ="calculate">Calculate Score!</button>
+     </div>
+    </main>
+
+
+    <section class="podcastResult">
+        <div class="wrapper">
+        <ul></ul>
+
+        <button id="reset">Retake Quiz</button>
+        </div>
+    </section>
+
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+    <script src="scripts/script.js"></script>
+
+</body>
+</html>
