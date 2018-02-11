@@ -179,7 +179,8 @@ form {
     width: 100%;
     padding-left: 0; }
   .podcastResult ul li {
-    list-style: none; }
+    list-style: none;
+    text-transform: capitalize; }
 
 body {
   background: #9b30ff;
