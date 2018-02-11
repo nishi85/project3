@@ -23,8 +23,6 @@ podcasts.comparison = function() {
       highestValue = podcasts.genres[key]; 
     }
   } 
-   console.log(highest);
-  //  podcasts.highestGenre.push(highest);
   podcasts.highestGenre = highest;
   
 };
@@ -140,10 +138,103 @@ podcasts.entry = [
     title: "the moth",
     value: "nonFiction",
     genre: "non-fiction",
-    description: "Moth storytellers stand alone, under a spotlight, with only a microphone and a roomful of strangers. The storyteller and the audience embark on a high-wire act of shared experience which is both terrifying and exhilarating..",
+    description:
+      "Moth storytellers stand alone, under a spotlight, with only a microphone and a roomful of strangers. The storyteller and the audience embark on a high-wire act of shared experience which is both terrifying and exhilarating..",
     ongoing: "yes",
     length: "short",
     img: "assets/moth.jpg"
+  },
+
+  {
+    title: "stuff you should know",
+    value: "nonFiction",
+    genre: "non-fiction",
+    description:
+      "How do landfills work? How do mosquitos work? Join Josh and Chuck as they explore the Stuff You Should Know from genes to the Galapagos in this podcast",
+    ongoing: "yes",
+    length: "long",
+    img: "assets/sysk.jpg"
+  },
+
+  {
+    title: "talking simpsons",
+    genre: "comedy",
+    description:
+      "Join your friends at the Laser Time Podcast Network for a chronological and cromulent exploration of the greatest show ever made! Each podcast tackles a different episode of The Simpsons, breaking down every 22 minutes of animated entertainment into an embiggening discussion about Our Favorite Family.",
+    ongoing: "yes",
+    length: "medium",
+    img: "assets/ts.jpg"
+  },
+
+  {
+    title: "Mega64",
+    genre: "comedy",
+    description:
+      "The cast and crew of Mega64 (mega64.com) talk crap for an hour. Rad.",
+    ongoing: "yes",
+    length: "short",
+    img: "assets/mega64.jpg"
+  },
+
+  {
+    title: "criminal",
+    value: "trueCrime",
+    genre: "true crime",
+    description:
+      "Criminal explores a different criminal case in each episode across a wide range of topics including stories about a mother-daughter coroner team,a student who manufactured counterfeit banknotes with inkjet printers and an African American man who was wrongfully shot by police in front of his mother and father.",
+    ongoing: "yes",
+    length: "short",
+    img: "assets/criminal.png"
+  },
+
+  {
+    title: "someone knows something",
+    value: "trueCrime",
+    genre: "true crime",
+    description:
+      "SOMEONE KNOWS SOMETHING is an original true-crime podcast examining unsolved cases of missing or murdered individuals, produced by CBC Radio One. David Ridgen hosts the weekly series, which focuses on a single Canadian cold case each season in hopes of uncovering new information, while also exploring how the cases have affected the families and communities involved.",
+    ongoing: "yes",
+    length: "short",
+    img: "assets/sks.jpg"
+  },
+
+  {
+    title: "the noSleep podcast",
+    genre: "horror",
+    description:
+      "The NoSleep Podcast is an anthology horror fiction podcast. NoSleep began as a “subreddit” or forum on Reddit where people would exchange scary stories and frightening experiences.",
+    ongoing: "yes",
+    length: "long",
+    img: "assets/ns.jpg"
+  },
+
+  {
+    title: "spooked",
+    genre: "horror",
+    description:
+      "True-life supernatural stories, told first-hand by people who can barely believe it happened themselves.",
+    ongoing: "yes",
+    length: "short",
+    img: "assets/spooked.jpg"
+  },
+
+  {
+    title: "homecoming",
+    genre: "fiction",
+    description:
+      "The scripted psychological thriller opens on a meeting with a soldier who has just returned home and slowly reveals its mystery from there. It boasts voice acting by Oscar Isaac, Catherine Keener and David Schwimmer, among other stars.",
+    ongoing: "yes",
+    length: "medium",
+    img: "assets/hc.jpg"
+  },
+
+  {
+    title: "alice isn't dead",
+    genre: "fiction",
+    description: "Alice Isn't Dead is a podcast presented as a series of audio diaries by a truck driver in her search across America for the wife she had long assumed was dead",
+    ongoing: "yes",
+    length: "short",
+    img: "assets/ad.png"
   }
 ];
 
