@@ -1,14 +1,26 @@
 .podcastResult {
 
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-        ul {
-            width: 100%;
-            padding-left: 0;
+    justify-content: space-around;
+    text-align: left;
+    margin: 25px auto;
+    background: rgba(211, 197, 197, 0.8);
+    border: 2px solid #000;
+
+    div {
+        width: 45%;
+    }
+        p {
+             text-transform: capitalize;
+             display: none;
+             width: 100%;
+
         }
-        ul li{
-            list-style: none;
-            text-transform: capitalize;
-        }
+
+    div:nth-child(2){
+        width: 20%;
+    }    
+    
+
 }

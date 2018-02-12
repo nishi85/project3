@@ -1,20 +1,47 @@
 form {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
+    width: 90%;
+    justify-content: flex-start;
     
-    h3,  {
+    h3  {
         width: 100%;
     }
 
-    // input {
-    //     width: 2%;
-    // }
+    div {
+        width:100%;
+        display: flex;
+        justify-content: flex-start;
+        margin: 5px 0;
 
-    // label {
-    //     width: 95%;
-    // }
+    input[type="radio"] {
+        opacity: 0.5;
+    }
+
+     input[type="radio"] ~ label {
+        opacity: 0.5;
+        margin: 5px;
+        padding: 5px;
+        border: 2px solid transparent;
+        text-align: left;
+        transition: all 1s;
+    }
+
+    input[type="radio"] ~ label:hover {
+        opacity: 0.8;
+        border: 2px solid transparent;
+    }
+
+
+    input[type="radio"]:active ~ label {
+        opacity: 0.8;
+        border: 2px solid transparent;
+    }
+
+    input[type="radio"]:checked ~ label {
+        opacity: 1;
+        border-bottom: 2px solid #000;
+    }
+    } 
+
 }

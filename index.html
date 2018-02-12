@@ -10,11 +10,11 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+    <div class="bgOpacity"></div>   
     <header class ="quizHeader">
         <div class="wrapper">
             <h1>Podcast Quiz!</h1>
             <i class="fas fa-podcast fa-5x"></i>
-
             <p>Welcome to the podcast recommendation quiz! Please answer the following questions and the quiz will give you a podcast recommendation!</p>
             <button id="btnStart">Take Quiz!</button>
         </div>
@@ -23,97 +23,217 @@
     <main = class"quizMain">
       <div class="wrapper">
         <form class="quiz">
-            <h3>1. question 1 </h3>
-            <input name="test" type="radio" id="horror" value="horror">
-            <label for="horror">Horror</label>
-            <input name="test" type="radio" id="comedy" value="comedy">
-            <label for="comedy">Comedy</label>
-            <input name="test" type="radio" id="trueCrime" value="trueCrime"> 
-            <label for="trueCrime">True Crime</label>
-            <input name="test" type="radio" id="nonFiction" value="nonFiction"> 
-            <label for="nonFiction">Non Fiction</label>
-            <input name="test" type="radio" id="fiction" value="fiction"> 
-            <label for="fiction">Fiction</label>
+            <h3>1. You just found out that you failed your English class. How do you react? </h3>
+            <div>
+                <input name="test" type="radio" id="horror" value="horror">
+                <label for="horror">'It's not my fault. My imaginary friend keeps giving me the wrong answers.'</label>
+            </div>
+            <div>
+                <input name="test" type="radio" id="comedy" value="comedy">
+                <label for="comedy">'Me fail English? That's unpossible.'</label>
+            </div>
+            <div>
+                <input name="test" type="radio" id="trueCrime" value="trueCrime"> 
+                <label for="trueCrime">You blame your teacher and plot your revenge...</label>
+            </div>
+            <div>
+                <input name="test" type="radio" id="nonFiction" value="nonFiction"> 
+                <label for="nonFiction">Use this as an lesson to work harder next time.</label>
+            </div>
+            <div>
+                <input name="test" type="radio" id="fiction" value="fiction"> 
+                <label for="fiction">'Everything happens for a reason. Summer school will be fun!'</label>
+            </div>
             <button class ="answerOne">Answer!</button>
         </form>
 
+        
+
         <form class="quiz2">
-            <h3>2. question 2 </h3>
-            <input name="test2" type="radio" id="horror" value="horror">
-            <label for="horror">Horror</label>
-            <input name="test2" type="radio" id="comedy" value="comedy">
-            <label for="comedy">Comedy</label>
-            <input name="test2" type="radio" id="trueCrime" value="trueCrime">
-            <label for="trueCrime">True Crime</label>
-            <input name="test2" type="radio" id="nonFiction" value="nonFiction">
-            <label for="nonFiction">Non Fiction</label>
-            <input name="test2" type="radio" id="fiction" value="fiction">
-            <label for="fiction">Fiction</label>
+            <h3>2. You witness a complete stranger slip and fall on ice. What do you do? </h3>
+            <div>
+                <input name="test2" type="radio" id="horror" value="horror">
+                <label for="horror">Thats weird...I did not notice the stranger before...</label>
+            </div>
+            <div>
+                <input name="test2" type="radio" id="comedy" value="comedy">
+                <label for="comedy">You point and laugh.</label>
+            </div>
+            <div>
+                <input name="test2" type="radio" id="trueCrime" value="trueCrime">
+                <label for="trueCrime">You help the stanger, but take note that ice is slippery and harmful...</label>
+            </div>
+            <div>
+                <input name="test2" type="radio" id="nonFiction" value="nonFiction">
+                <label for="nonFiction">You help the stranger and decide to write a letter to the city complaining about not putting salt on the ground.</label>
+            </div>
+            <div>
+                <input name="test2" type="radio" id="fiction" value="fiction">
+                <label for="fiction">You help the stanger and hope you two become friends.</label>
+            </div>
             <button class="answerTwo">Answer!</button>
         </form>
 
         <form class="quiz3">
-            <h3>3. question 3 </h3>
-            <input name="test3" type="radio" id="fiction" value="fiction">
-            <label for="fiction">Fiction</label>
-            <input name="test3" type="radio" id="nonFiction" value="nonFiction">
-            <label for="nonFiction">Non Fiction</label>
-            <input name="test3" type="radio" id="trueCrime" value="trueCrime">
-            <label for="trueCrime">True Crime</label>
-            <input name="test3" type="radio" id="horror" value="horror">
-            <label for="horror">Horror</label>
-            <input name="test3" type="radio" id="comedy" value="comedy">
-            <label for="comedy">Comedy</label>
+            <h3>3. It's 3AM and you are wide awake. Why? </h3>
+            <div>
+                <input name="test3" type="radio" id="fiction" value="fiction">
+                <label for="fiction">Comptemplating getting in your car and just keep driving and see where life takes you.</label>
+            </div>
+           <div>
+                <input name="test3" type="radio" id="nonFiction" value="nonFiction">
+                <label for="nonFiction">How can I sleep when there is so much to do while awake?</label>
+           </div>
+            <div>
+                <input name="test3" type="radio" id="trueCrime" value="trueCrime">
+                <label for="trueCrime">Someone stole your lunch at work and it's up to you to figure out who and why.</label>
+            </div>
+            <div>
+                <input name="test3" type="radio" id="horror" value="horror">
+                <label for="horror">Can't sleep! Clown will Eat me!</label>
+            </div>
+            <div>
+                <input name="test3" type="radio" id="comedy" value="comedy">
+                <label for="comedy">You finally just got the joke that you heard 12 hours ago.</label>
+            </div>
             <button class="answerThree">Answer!</button>
         </form>
 
         <form class="quiz4">
-            <h3>4. question 4 </h3>
-            <input name="test4" type="radio" id="horror" value="horror">
-            <label for="horror">Horror</label>
-            <input name="test4" type="radio" id="comedy" value="comedy">
-            <label for="comedy">Comedy</label>
-            <input name="test4" type="radio" id="trueCrime" value="trueCrime">
-            <label for="trueCrime">True Crime</label>
-            <input name="test4" type="radio" id="nonFiction" value="nonFiction">
-            <label for="nonFiction">Non Fiction</label>
-            <input name="test4" type="radio" id="fiction" value="fiction">
-            <label for="fiction">Fiction</label>
+            <h3>4. Your waiter brings you the wrong order. What happens next? </h3>
+            <div>
+                <input name="test4" type="radio" id="horror" value="horror">
+                <label for="horror">The waiter assumed you wanted your 'usual', but this is your first time at the restaurant...</label>
+            </div>
+            <div>
+                <input name="test4" type="radio" id="comedy" value="comedy">
+                <label for="comedy">You inform the waiter of the mistake, but when you tell your friends of the situation, you exagerate the whole event.</label>
+            </div>
+            <div>
+                <input name="test4" type="radio" id="trueCrime" value="trueCrime">
+                <label for="trueCrime">You create a scene, because you know it will be the perfect alibi...</label>
+            </div>
+           <div>
+                <input name="test4" type="radio" id="nonFiction" value="nonFiction">
+                <label for="nonFiction">You inform the waiter and ask if they are having a tough day.</label>
+           </div>
+           <div>
+                <input name="test4" type="radio" id="fiction" value="fiction">
+                <label for="fiction">You do nothing, eat your food, then inform the restuarant of the mistake and letting them that you expect the resatuant to cover the meal.</label>
+           </div>
             <button class="answerFour">Answer!</button>
         </form>
 
 
         <form class="quiz5">
-            <h3>5. question 5 </h3>
-            <input name="test5" type="radio" id="horror" value="horror">
-            <label for="horror">Horror</label>
-            <input name="test5" type="radio" id="comedy" value="comedy">
-            <label for="comedy">Comedy</label>
-            <input name="test5" type="radio" id="trueCrime" value="trueCrime">
-            <label for="trueCrime">True Crime</label>
-            <input name="test5" type="radio" id="nonFiction" value="nonFiction">
-            <label for="nonFiction">Non Fiction</label>
-            <input name="test5" type="radio" id="fiction" value="fiction">
-            <label for="fiction">Fiction</label>
+            <h3>5. You start to suspect your new home is haunted... </h3>
+          <div>
+                <input name="test5" type="radio" id="comedy" value="comedy">
+                <label for="comedy">You call the Ghostbusters, because you think it will be hilarious.</label>
+          </div>
+            <div>
+                <input name="test5" type="radio" id="trueCrime" value="trueCrime">
+                <label for="trueCrime">You start to research the history of your propery and you find a deep, dark, buried secret.</label>
+            </div>
+          <div>
+                <input name="test5" type="radio" id="nonFiction" value="nonFiction">
+                <label for="nonFiction">You do nothing, because ghosts are not real. Stop being silly.</label>
+          </div>
+          <div>
+                <input name="test5" type="radio" id="fiction" value="fiction">
+                <label for="fiction">You call the Ghostbusters, because you think it will be fun.</label>
+          </div>
+           <div>
+                <input name="test5" type="radio" id="horror" value="horror">
+                <label for="horror">You initially do nothing. You hear voices telling you to 'get out'. You do nothing. Time has passed and the doors and windows start to open and shut by themselves. You do nothing. You are violently dragged out of your bed by an unkwown force every night. You do nothing. A message is written in blood on the walls warning you to leave. You start to think maybe your place might be a little strange...</label>
+           </div>
             <button class="answerFive">Answer!</button>
         </form>
 
+        <form class="quiz6">
+            <h3>6. You're on vacation and you are visiting a new city for the first time. </h3>
+          <div>
+                <input name="test6" type="radio" id="horror" value="horror">
+                <label for="horror">Ask the locals where the creeptiest parts are and go there immediately.</label>
+          </div>
+        <div>
+                <input name="test6" type="radio" id="comedy" value="comedy">
+                <label for="comedy">You take notice of how different everyone is and how funny it is to you.</label>
+        </div>
+            <div>
+                <input name="test6" type="radio" id="trueCrime" value="trueCrime">
+                <label for="trueCrime">You notice people start to act strange when they talk about the mayor and you want to know why.</label>
+            </div>
+            <div>
+                <input name="test6" type="radio" id="nonFiction" value="nonFiction">
+                <label for="nonFiction">You want to take in all the city has to offer. Experience the food, the culture, and the sites.</label>
+            </div>
+            <div>
+                <input name="test6" type="radio" id="fiction" value="fiction">
+                <label for="fiction">Ask the locals where the most dangerous parts of the city are and go there immediately.</label>
+            </div>
+            <button class="answerSix">Answer!</button>
+        </form>
 
-        <button class ="calculate">Calculate Score!</button>
+        <form class="quiz7">
+            <h3>7. A new neighbour just moved in next door to you and they seem awefully suspicious... </h3>
+            <div>
+                <input name="test7" type="radio" id="comedy" value="comedy">
+                <label for="comedy">You instantly hate your new neighbour and everything they do annoys you.</label>
+            </div>
+            <div>
+                <input name="test7" type="radio" id="trueCrime" value="trueCrime">
+                <label for="trueCrime">You trust your instincts. You start to record when they leave their house and when they come back. You take notice of any of their visitors too. You also periodically go through their trash</label>
+            </div>
+           <div>
+                <input name="test7" type="radio" id="horror" value="horror">
+                <label for="horror">You wonder why you don't see them during the day and it's quite peculiar that they do not have a reflection.</label>
+           </div>
+           <div>
+                <input name="test7" type="radio" id="nonFiction" value="nonFiction">
+                <label for="nonFiction">You get know your neighbour and it turns out they are very fascinating. You listen to their stories and they inspire you.</label>
+           </div>
+            <div>
+                <input name="test7" type="radio" id="fiction" value="fiction">
+                <label for="fiction">You find out that your neightbour is a double agent and you somehow get mixed up in their business.</label>
+            </div>
+            <button class="answerSeven">Answer!</button>
+        </form>
+
+        <form class="quiz8">
+            <h3>9.How do you get to your favourite restaurant? </h3>
+            <div>
+                <input name="test8" type="radio" id="short" value="short">
+                <label for="short"> I walk.</label>
+            </div>
+          <div>
+                <input name="test8" type="radio" id="medium" value="medium">
+                <label for="medium">I drive.</label>
+          </div>
+          <div>
+                <input name="test8" type="radio" id="long" value="long">
+                <label for="long">I take public transportation.</label>
+          </div>
+          <button class="answerEight">Answer!</button>
+        </form>
+
+        <div>
+            <p class="ready">You score has been calculated. Please click below to get your recomendation</p>
+            <button class ="calculate">Recommend Me A Podcast!</button>
+            
+        </div>
      </div>
     </main>
 
 
-    <section class="podcastResult">
-        <div class="wrapper">
-        <ul></ul>
-
-        <button id="reset">Retake Quiz</button>
-        </div>
+    <div class="wrapper">
+        <section class="podcastResult">        
     </section>
+    <button id="reset">Retake Quiz</button>
+        </div>
 
     <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
-    <script src="scripts/script.js"></script>
+    <script src="scripts/script2.js"></script>
 
 </body>
 </html>
