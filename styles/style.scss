@@ -58,6 +58,15 @@ button {
     
 }
 
+footer {
+    display: flex;
+    margin-top: 150px;
+    justify-content: flex-end;
+    align-content: flex-end;
+    @include remCalc(16);
+    width:100%;
+
+}
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
 }

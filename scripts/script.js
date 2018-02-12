@@ -340,7 +340,8 @@ podcasts.entry = [
             $(".answerEight").on("click", function(e) {
               e.preventDefault();
               podcasts.tally("input[name=test8]:checked", ".quiz8", ".ready");
-               $(".calculate").show();
+              $('footer').hide(); 
+              $(".calculate").show();
             });   
 
 
@@ -350,6 +351,7 @@ podcasts.entry = [
             $('.ready').hide();
             $('.calculate').hide();
             $('#reset').show();
+            $("footer").show(); 
             });
 
             $('#reset').on('click', function(e){
