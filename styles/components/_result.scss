@@ -1,3 +1,5 @@
+// styles for result after quiz is completed
+
 .podcastResult {
 
     display: flex;
@@ -15,12 +17,49 @@
              text-transform: capitalize;
              display: none;
              width: 100%;
+             @include remCalc(18);
 
+             a {
+                 text-transform: none;
+                 color: #000;
+                 &:hover {
+                    color: #fff;
+                }
+             }
         }
 
     div:nth-child(2){
         width: 20%;
     }    
     
+}
 
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+    
+    .podcastResult {
+        width: 80%;
+        padding: 20px;
+
+    div {
+        width:100%;
+    }
+
+    div:nth-child(2){
+        width: 100%;
+    }
+    
+}
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    p {
+        @include remCalc(16);
+    }
 }

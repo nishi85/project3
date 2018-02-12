@@ -146,6 +146,13 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
     width: 100%;
     font-size: 1.625rem; }
 
+/* Portrait tablet and small desktops */
+/* Landscape phone to portrait tablet */
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  p {
+    font-size: 1.375rem; } }
+
 form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -168,7 +175,7 @@ form {
     justify-content: flex-start;
     margin: 5px 0; }
     form div input[type="radio"] {
-      opacity: 0.5; }
+      opacity: 0.9; }
     form div input[type="radio"] ~ label {
       opacity: 0.5;
       margin: 5px;
@@ -177,16 +184,48 @@ form {
       text-align: left;
       -webkit-transition: all 1s;
       -o-transition: all 1s;
-      transition: all 1s; }
+      transition: all 1s;
+      font-size: 1.125rem; }
     form div input[type="radio"] ~ label:hover {
-      opacity: 0.8;
+      opacity: 0.9;
       border: 2px solid transparent; }
     form div input[type="radio"]:active ~ label {
-      opacity: 0.8;
+      opacity: 0.9;
       border: 2px solid transparent; }
     form div input[type="radio"]:checked ~ label {
       opacity: 1;
       border-bottom: 2px solid #000; }
+
+/* Portrait tablet and small desktops */
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  input[type="radio"] ~ label {
+    font-size: 1rem; } }
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  input[type="radio"] ~ label {
+    opacity: 1;
+    margin: 3px;
+    padding: 3px;
+    border: 2px solid transparent;
+    text-align: left;
+    color: #fff;
+    font-size: 1rem; }
+  input[type="radio"] {
+    opacity: 0; }
+  input[type="radio"]:active ~ label {
+    color: #fff;
+    border: 2px solid transparent;
+    opacity: 0; }
+  input[type="radio"] ~ label:hover {
+    opacity: 0;
+    border: none;
+    color: #fff; }
+  input[type="radio"]:checked ~ label {
+    opacity: 0;
+    border-bottom: none;
+    color: #fff; } }
 
 .podcastResult {
   display: -webkit-box;
@@ -205,9 +244,31 @@ form {
   .podcastResult p {
     text-transform: capitalize;
     display: none;
-    width: 100%; }
+    width: 100%;
+    font-size: 1.125rem; }
+    .podcastResult p a {
+      text-transform: none;
+      color: #000; }
+      .podcastResult p a:hover {
+        color: #fff; }
   .podcastResult div:nth-child(2) {
     width: 20%; }
+
+/* Portrait tablet and small desktops */
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  .podcastResult {
+    width: 80%;
+    padding: 20px; }
+    .podcastResult div {
+      width: 100%; }
+    .podcastResult div:nth-child(2) {
+      width: 100%; } }
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  p {
+    font-size: 1rem; } }
 
 body {
   color: #fff;
@@ -253,3 +314,7 @@ button {
     background: rgba(0, 0, 0, 0.8);
     color: #fff;
     border: 2px solid white; }
+
+/* Portrait tablet and small desktops */
+/* Landscape phone to portrait tablet */
+/* Landscape phones and down */

@@ -1,3 +1,5 @@
+//styles for header
+
 .quizHeader {
     display: flex;
     justify-content: center;
@@ -13,4 +15,19 @@
         @include remCalc(26);
     }
 
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    p {
+        @include remCalc(22);
+    }
 }

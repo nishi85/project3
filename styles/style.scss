@@ -12,13 +12,14 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 @import "components/form";
 @import "components/result";
 
+//general styles
+
 body {
     color: #fff;
     font-family: 'Roboto Condensed', sans-serif;
     background: url(../assets/juja-han-210775.jpg) no-repeat center center fixed;
     background-size: cover;
     position: relative;
-    // height: 100vh;
 }
 
 .bgOpacity {
@@ -55,5 +56,19 @@ button {
         border: 2px solid white;
     }
     
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+
+
 }
 
