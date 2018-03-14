@@ -9,45 +9,59 @@ form {
     
     h3  {
         width: 100%;
+        @include remCalc(24);
+
     }
 
     div {
         width:100%;
         display: flex;
         justify-content: flex-start;
-        align-items: center;
-        margin: 0px 0;
+        align-items: baseline;
+        flex-wrap: wrap; 
+        margin-bottom: 5px;
+
+        
+            .quizANS {
+                width: 5%;
+            }
+
+            .question {
+                width: 95%;
+                @include remCalc(20);
+                text-align: left;
+            }
+        
 
     input[type="radio"] {
-        opacity: 0.9;
+        // width: 10%;
+        margin-right: 5px;
     }
 
      input[type="radio"] ~ label {
-        opacity: 0.5;
         margin: 5px;
         padding:  0 5px;
-        border: 2px solid transparent;
         text-align: left;
         transition: all 1s;
-        @include remCalc(18);
+        @include remCalc(20);
     }
 
-    input[type="radio"] ~ label:hover {
-        opacity: 0.9;
-        border: 2px solid transparent;
-    }
+     input[type="radio"] ~ label:hover {
+         color: white;
+     }
 
 
-    input[type="radio"]:active ~ label {
-        opacity: 0.9;
-        border: 2px solid transparent;
-    }
+     input[type="radio"]:active ~ label {
+        color: white;
+     }
 
-    input[type="radio"]:checked ~ label {
-        opacity: 1;
-        border-bottom: 2px solid #000;
-    }
+     input[type="radio"]:checked ~ label {
+         color: white;
+     }
     } 
+
+
+
 
 }
 
@@ -58,47 +72,23 @@ form {
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
-    input[type="radio"] ~ label {
-         @include remCalc(16);
+    
+    
+  form {
+
+    div {
+      
+     input[type="radio"] ~ label {
+        @include remCalc(16);
+            }
+        }
     }
+
 }
+
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
-         input[type="radio"] ~ label {
-        opacity: 1;     
-        margin: 3px;
-        padding: 3px;
-        border: 2px solid transparent;
-        text-align: left;
-        color: #fff;
-        @include remCalc(16);
-    }
 
-    input[type="radio"] {
-        opacity: 0;
-    }
-
-
-
-    input[type="radio"]:active ~ label {
-        color: #fff;
-        border: 2px solid transparent;
-        opacity: 0;
-    }
-
-        input[type="radio"] ~ label:hover {
-        opacity: 0;
-        border: none;
-        color: #fff;
-    }
-
-
-
-    input[type="radio"]:checked ~ label {
-        opacity: 0;
-        border-bottom: none;
-        color: #fff;
-    }
 
 }
