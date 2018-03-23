@@ -15,7 +15,6 @@ podcasts.filter = null;
 
 // function gets the highest genre by value and sets it equal to podcasts.highestGenre
 podcasts.comparison = function() {
-   console.log("hello");
    let highest = null;
    let highestValue = 0;
    for (let key in podcasts.genres) {

@@ -4,9 +4,13 @@ form {
     display: flex;
     flex-wrap: wrap;
     width: 90%;
+    margin: 15px auto;
     justify-content: flex-start;
     align-items: center;
-    
+    color: white;
+      background: linear-gradient(70deg, transparent, lightgray);
+      border-radius: 1.25em;
+
     h3  {
         width: 100%;
         @include remCalc(24);
@@ -30,65 +34,12 @@ form {
                 width: 95%;
                 @include remCalc(20);
                 text-align: left;
-            }
-        
-
-    input[type="radio"] {
-        // width: 10%;
-        margin-right: 5px;
-    }
-
-     input[type="radio"] ~ label {
-        margin: 5px;
-        padding:  0 5px;
-        text-align: left;
-        transition: all 1s;
-        @include remCalc(20);
-    }
-
-     input[type="radio"] ~ label:hover {
-         color: white;
-     }
-
-
-     input[type="radio"]:active ~ label {
-        color: white;
-     }
-
-     input[type="radio"]:checked ~ label {
-         color: white;
-     }
     } 
 
 
 
 
 }
-
-
-/* Portrait tablet and small desktops */
-@media (max-width: 940px) {
-}
-
-/* Landscape phone to portrait tablet */
-@media (max-width: 768px) {
-    
-    
-  form {
-
-    div {
-      
-     input[type="radio"] ~ label {
-        @include remCalc(16);
-            }
-        }
-    }
-
 }
 
 
-/* Landscape phones and down */
-@media (max-width: 480px) {
-
-
-}
